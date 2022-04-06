@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varesco Trail Running Team - Nosotros</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="shorcut icon" href="../img/favicon_io/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+</head>
+<body class="layout">
+    <header class="header">
+        <div class="header__logo">
+            <a href="../index.html">
+                <img src="../img/Logo VTRT.png" alt="Logo Varesco">
+            </a>
+        </div>
+        <nav class="header__menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./actividades.html">Actividades</a></li>
+                <li><a href="./planes.html">Planes</a></li>
+                <li><a class="activos" href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="banner__contacto">
+        <div class="banner__titulo">
+            <h1>Contacto</h1>
+        </div>
+        <div class="banner__subtitulo">
+            <p>Esperamos tus consultas y comentarios</p>
+        </div>
+    </section>
+    <main class="formulario">
+            <form action="enviar.php" method="get" enctype="text/plain" class="formulario__contacto" >
+                <fieldset>
+                    <legend>Tus Datos</legend>
+                    <div class="contacto__campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="contacto__campo">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" placeholder="Tu apellido" required>
+                    </div>
+                    <div class="contacto__campo">
+                        <label for="sexo">Sexo:</label>
+                        <input type="radio" name="sexo" id="sexo"> Masculino
+                        <input type="radio" name="sexo" id="sexo"> Femenino
+                        <input type="radio" name="sexo" id="sexo"> Prefiero no decirlo
+                    </div>
+                    <div class="contacto__campo">
+                        <label for="mail">Email:</label>
+                        <input type="text" id="mail" placeholder="Tu email">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Queremos saber de vos</legend>
+                    <div class="contacto__campo">
+                        <label for="experiencia">Corrías anteriormente?:</label>
+                        <input type="radio" name="experiencia" id="experiencia">Sí
+                        <input type="radio" name="experiencia" id="experiencia">No
+                    </div>
+                    <div class="contacto__campo">
+                        <label for="preferencia" class="eleccion">Que tipos de carreras te gustan?:</label> <br>
+                        <input type="checkbox" name="preferencia" id="preferencia" value="1"> De Calle
+                        <input type="checkbox" name="preferencia" id="preferencia" value="2"> De montaña
+                    </div>
+                    <div class="contacto__campo">
+                        <label for="pago">Que plan te interesa?:</label>
+                        <select name="pago" id="pago">
+                            <option value="0">Seleccioná el plan</option>
+                            <option value="1">Plan mensual</option>
+                            <option value="2">Plan trimestral</option>
+                            <option value="3">Plan semestral</option>
+                            <option value="4">Aún no me decido</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <Fieldset>
+                    <div class="contacto__campo">
+                        <label for="multi" class="comentario">Comentario: </label> <br>
+                        <textarea name="multi" id="multi" cols="30" rows="10" class="comentario"></textarea> <!-- Ingreso de texto multilínea -->
+                    </div>
+                </fieldset>
+                <div class="contacto__submit">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__eslogan">#tu brújula en el camino</h2>
+        <div class="footer__contacto">
+            <div class="contacto__bloque">
+                <h3>mail</h3>
+                <img src="../img/icono_email.png" alt="icono mail">
+                <p>varesco.trt@gmail.com</p>    
+            </div>
+            <div class="contacto__bloque">
+                <h3>teléfono</h3>
+                <img src="../img/icon_telefono.png" alt="icono teléfono" >
+                <p>+54116687100</p>
+            </div>
+            <div class="contacto__bloque">
+                <h3>redes</h3> 
+                <div class="iconos__redes">
+                    <a href="https://www.facebook.com/varesco.trt/"><img src="../img/icono face.png" alt="Icono facebook"></a>
+                    <a href="https://www.instagram.com/varesco.trt/"><img src="../img/icono instagram.png" alt="Icono Instagram"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,747 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html,body {
+	width: 100%;
+	height: 100vh;
+}
+html {
+    background-color: #000;
+}
+h1 {
+	font-size: 25px;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-size: 23px;
+}
+h3 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 15px;
+}
+
+.layout {
+	display: grid;
+	grid-template-columns: 45px auto 45px;
+	grid-template-rows: auto 600px auto auto auto 250px;
+}
+
+
+.header {
+	grid-column: 1/4;
+	grid-row: 1/2;
+    background-color: #1981FF;
+	width: 100%;
+	position: sticky;
+	top: 0;
+}
+.header__logo {
+    margin-top: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+.header__logo img {
+	width: 135px;
+	height: 150px;
+}
+
+.header__menu {
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+}
+.header__menu li {
+	display: inline-block;
+	text-align: center;
+    padding: 5px 10px;
+    border: 1px solid #000;
+}
+
+.header__menu li :hover {
+	color: #1981FF;
+}
+
+
+/*-------------------------------- Css Página Home-------------------------------------------------- */
+
+.banner__home {
+	grid-column: 1/4;
+	grid-row: 2/3;
+	padding-top: 0;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/imagen_portada.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+
+}
+
+.banner__titulo {
+	background-color: #000000af;
+	color: #fff;
+	padding: 5px;
+	
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+.banner__subtitulo {
+	background-color: #0C3970;
+	width: 250px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	text-align: center;
+	margin: 50px auto;
+	padding: 5px 10px;
+	color: #fff;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.seccion {
+	grid-column: 2/3;
+	grid-row: 3/6;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+}
+
+.seccion__contenedor {
+	width: 300px;
+	height: 300px;
+	margin: 20px;
+	background-color: #1981FF;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 20px;
+	box-shadow: 0 0 4px 0 #fff;
+	
+}
+
+.seccion__contenedor:hover {
+	transition: 0.2 all;
+	transform: scale(1.05);
+}
+
+.contenedor__imagen img {
+	background-color: #fff;
+	margin: 20px;
+	padding: 10px;
+	border-radius: 20px;
+	width: 125px;
+	height: 100px;
+}
+
+.contenedor__texto {
+	height: auto;
+}
+
+.contenedor__texto h3 {
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+	padding: 5px;
+}
+
+.contenedor__texto p {
+	background-color: #0C3970;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	padding: 10px;
+	margin: 0;
+	border-radius:0 0 20px 20px;
+	
+}
+
+/*-------------------------- Css página Nosotros------------------------------------------------ */
+
+.banner__nosotros {
+	grid-column: 1/4;
+	padding-top: 0;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/imagen_nosotros.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.nosotros {
+	grid-column: 2/3;
+	grid-row: 3/5;
+}
+.ubicacion {
+	grid-column: 2/3;
+	grid-row: 5/6;
+}
+
+.nosotros__contenido {
+	
+	height: auto;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.nosotros__contenido--azul {
+	height: auto;
+	width: 100%;
+	background-color: #0C3970;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.nosotros__media img {
+	height: 350px;
+	border-radius: 5px;
+}
+
+.nosotros__media {
+	height: 350px;
+    margin: 15px;
+	display: inline-block;
+    padding: 10px;
+}
+
+.nosotros__texto{
+	color:#fff;
+	width: 30%;
+	display: inline-block;
+	margin: 10px;
+    padding: 10px 20px 20px 10px;
+}
+.nosotros__texto h2 {
+	text-align: center;
+	padding: 5px;
+}
+
+.nosotros__texto p {
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+}
+.nosotros__media iframe {
+	border-radius: 5px;
+	height: 350px;
+	width: 400px;
+}
+
+
+/*--------------------------- Css página actividades ---------------------------------------*/
+
+.banner__actividades {
+	grid-column: 1/4;
+	padding-top: 0;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/imagen__actividades.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.actividades {
+	grid-column: 2/3;
+	grid-row: 3/6;
+}
+.galeria {
+	
+	width: 100%;
+	height: auto;
+}
+
+.galeria__texto {
+	color: #fff;
+	text-align: center;
+}
+
+.galeria__texto h2 {
+	background-color: #0C3970;
+	padding: 10px;
+	
+}
+.galeria__texto p {
+	padding: 10px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+.galeria__fotos {
+	margin: 5px auto;
+	width: 100%;
+	max-width: 1000px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5px;
+}
+
+.galeria__fotos img {
+	width: 100%;
+	filter: blur(1px) brightness(80%);
+}
+.galeria__fotos img:hover {
+	filter: none;
+	transform: scale(1.01);
+}
+
+/* ----------------------Css página planes-------------------------------------------- */
+
+.banner__planes {
+	grid-column: 1/4;
+	padding-top: 0;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/imagen_planes.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+
+.planes {
+	grid-column: 2/3;
+	grid-row: 3/6;
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.planes__tabla {
+	color: #fff;
+	text-align: center;
+	margin: 20px 0 0 0;
+	width: 30%;
+	min-width: 250px;
+	height: 350px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 4px 0 #fff;
+	padding: 10px;
+	flex-grow: 1;
+}
+
+.planes__tabla h2 {
+	background-color: #1981FF;
+	margin-bottom: 30px;
+}
+
+.planes__tabla h3 {
+	margin-bottom: 30px;
+}
+
+.planes__tabla ul {
+	margin-bottom: 40px;
+}
+
+.planes__tabla ul li {	
+	font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.planes__tabla a {
+	background-color: #1981FF;
+	padding: 5px 20px;
+	border-radius: 20px;
+	font-weight: 600;
+}
+
+.planes__tabla:hover {
+	background-color: #0C3970;
+	transition: 0.2 all;
+	transform: scale(1.05);
+}
+/* ----------------------Css página contacto------------------------------------------ */
+
+.banner__contacto {
+	grid-column: 1/4;
+	padding-top: 0;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/imagen_contacto.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.formulario {
+	grid-column: 2/3;
+	grid-row: 3/6;
+	width: 100%;
+	height: auto;
+}
+
+.formulario__contacto {
+	background-color: #0C3970;
+	padding: 20px 10px;
+	margin: 30px auto;
+	height: auto;
+	width: 400px;
+	border-radius: 5px;
+}
+.formulario__contacto fieldset {
+	width: 100%;
+	margin: 15px 0;
+	border: none;
+	color: #fff;
+}
+
+.formulario__contacto legend {
+	font-family: 'Oswald', sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #1981FF;
+	width: 100%;
+	height: 30px;
+	margin: 20px 0;
+}
+
+.contacto__campo {
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+	padding: 5px;
+}
+.contacto__campo input{
+	padding: 3px;
+}
+.contacto__campo label {
+	padding: 3px;
+}
+
+.comentario {
+	width: 300px;
+}
+
+.contacto__submit input {
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 17px;
+	text-transform: uppercase;
+	background-color: #1981FF;
+	border: none;
+	padding: 3px;
+	width: 100%;
+	margin: 5px auto;
+}
+
+.contacto__submit :hover {
+	background-color: #1981FF;
+}
+
+
+/* -------------------Css footer------------------------------------------------------ */
+.footer{
+	grid-column: 1/4;
+	background-color: #1981FF;
+	margin-top: 20px;
+}
+.footer__eslogan {
+	background-color: #0C3970;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer__contacto {
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	padding: 20px 0;
+}
+
+.footer__contacto h3 {
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+}
+
+.footer__contacto img {
+	width: 30px;
+	height: 30px;
+	padding: 10px 0 20px 0;
+}
+
+.footer__contacto p {
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.contacto__bloque {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.iconos__redes a {
+	padding: 10px;
+}
+
+/* media query para tablets */
+@media screen and (max-width: 768px) {
+	.layout {
+		display: grid;
+		grid-template-columns: 30px auto 30px;
+		grid-template-rows: auto 700px auto auto auto 250px;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	h2 { 
+		font-size: 17px;
+	}
+	h3{
+		font-size: 15px;
+	}
+	a {
+		font-size: 15px;
+	}
+	p{
+		font-size: 12px;
+	}
+/* --------------------------------------header para tablets------------------------------------------- */	
+	.header__logo img {
+		width: 115px;
+		height: 130px;
+	}
+/* ------------------------------ Home para tablets---------------------------------------------------- */
+	.banner__home {
+		background-image: url(../img/imagen_portada-mobile.jpg);
+		height: 700px;
+	}
+	.seccion__contenedor {
+		width: 300px;
+		height: 275px;
+		margin: 10px;		
+	}
+/*----------------------------- Nosotros para tablets--------------------------------------------------- */
+	.banner__nosotros{
+		background-image: url(../img/imagen_nosotros-mobile.jpg) ;
+		height: 700px;
+	}
+	.nosotros {
+		grid-column: 1/4;
+		grid-row: 3/5;
+	}
+	.ubicacion {
+		grid-column: 1/4;
+		grid-row: 5/6;
+	}
+	.nosotros__contenido {
+		flex-direction: column;
+	}
+	
+	.nosotros__contenido--azul {
+		flex-direction: column;
+	}
+	
+	.nosotros__media img {
+		height: 300px;
+		margin: auto;
+	}
+	
+	.nosotros__media {
+		height: 300px;
+		display: block;
+	}
+	
+	.nosotros__texto{
+		width: 80%;
+		display: block;
+		margin: 10px auto;
+		padding: 10px 10px 10px 10px;
+	}
+
+	.nosotros__media iframe {
+		height: 250px;
+		width: 300px;
+	}
+
+/*-------------------------- Página Actividades para tablets----------------------------- */
+	.banner__actividades {
+		background-image: url(../img/imagen__actividades-mobile.jpg);
+		height: 700px;
+	}
+	.galeria__fotos {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.galeria__fotos img {
+		filter: none;
+	}
+/* -----------------------------Página Planes para tablets-------------------------------- */
+	.banner__planes {
+		background-image: url(../img/imagen_planes-mobile.jpg);
+		height: 700px;
+	}
+/* ----------------------------Pagina Contacto para tablets------------------------------- */
+	.banner__contacto {
+		background-image: url(../img/imagen_contacto-mobile.jpg);
+		height: 700px;
+	}
+	
+	.formulario__contacto {
+		background-color: #0C3970;
+		padding: 20px 10px;
+		margin: 30px auto;
+		height: auto;
+		width: 400px;
+		border-radius: 5px;
+	}
+	
+	.formulario__contacto legend {
+		font-size: 14px;
+	}	
+	.contacto__submit input {
+		font-size: 14px;
+	}
+}
+/* Media query para celulares */
+@media screen and (max-width: 480px){
+	.layout {
+		display: grid;
+		grid-template-columns: 20px auto 20px;
+		grid-template-rows: auto 700px auto auto auto 420px;
+	}
+	h1 {
+		font-size: 17px;
+	}
+	h2 { 
+		font-size: 15px;
+	}
+	h3{
+		font-size: 14px;
+	}
+	a {
+		font-size: 14px;
+	}
+	p{
+		font-size: 12px;
+	}
+/* ----------------------------------------Header para celulares-------------------------------------------------- */
+	.header__logo img {
+		width: 105px;
+		height: 120px;
+	}
+	.header__menu li {
+		display: inline-block;
+		text-align: center;
+		padding: 2px 3px;
+		border: 1px solid #000;
+	}
+/* -----------------------------------Home para celulares--------------------------- */
+	.seccion__contenedor {
+		width: 250px;
+		height: 260px;
+		margin: 10px;		
+	}
+/*-----------------------------------Nosotros para celulares ------------------------------ */
+	.nosotros__media img {
+		height: 250px;
+	}
+	
+	.nosotros__media {
+		height: 250px;
+	}
+
+	.nosotros__media iframe {
+		height: 250px;
+		width: 250px;
+	}
+/* -----------------------------Actividades para celulares---------------------------------- */	
+	.galeria__fotos {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+/* -----------------------------Contacto para celulares--------------------- */
+
+.formulario__contacto {
+	background-color: #0C3970;
+	padding: 20px 10px;
+	margin: 30px auto;
+	height: auto;
+	width: 250px;
+	border-radius: 5px;
+}
+
+.formulario__contacto legend {
+	font-size: 16px;
+}	
+.contacto__campo {
+	font-size: 16px;
+}
+.contacto__submit input a {
+	font-size: 16px;
+}
+
+.comentario {
+	width: 230px;
+}
+/* -----------------footer para celulares---------------- */
+
+.footer__contacto {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+}
