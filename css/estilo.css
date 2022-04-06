@@ -296,6 +296,7 @@ p {
 .galeria__texto {
 	color: #fff;
 	text-align: center;
+	overflow: hidden;
 }
 
 .galeria__texto h2 {
