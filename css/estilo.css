@@ -485,11 +485,14 @@ p {
 
 /* -------------------Css footer------------------------------------------------------ */
 .footer{
-	grid-column: 1/4;
 	background-color: #1981FF;
 	margin-top: 20px;
 }
-.footer__eslogan {
+.contenedor_eslogan{
+	padding: 0;
+}
+
+.eslogan {
 	background-color: #0C3970;
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
@@ -497,39 +500,15 @@ p {
 	text-align: center;
 	padding: 10px;
 }
-
-.footer__contacto {
-	height: auto;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	padding: 20px 0;
+.footer_bajo {
+	margin-bottom: 5px;
 }
-
-.footer__contacto h3 {
+.copy{
 	color: #fff;
-	text-align: center;
-	padding: 10px;
+	font-size: medium;
 }
-
-.footer__contacto img {
-	width: 30px;
-	height: 30px;
-	padding: 10px 0 20px 0;
-}
-
-.footer__contacto p {
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	text-transform: uppercase;
-	text-align: center;
-}
-
-.contacto__bloque {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+.loguito{
+	border-radius: 5px;
 }
 
 .iconos__redes a {
