@@ -472,6 +472,9 @@ p {
 .iconos__redes a {
 	padding: 10px;
 }
+.logo_red {
+	margin-bottom: 15px;
+}
 
 /* media query para tablets */
 @media screen and (max-width: 768px) {
@@ -608,12 +611,7 @@ p {
 		height: 120px;
 	}
 
-/* -----------------------------------Home para celulares--------------------------- */
-	.seccion__contenedor {
-		width: 250px;
-		height: 260px;
-		margin: 10px;		
-	}
+
 /*-----------------------------------Nosotros para celulares ------------------------------ */
 	.nosotros__media img {
 		height: 250px;
@@ -659,6 +657,9 @@ p {
 /* -----------------footer para celulares---------------- */
 
 .footer_link {
+	font-size: x-small;
+}
+.copy {
 	font-size: x-small;
 }
 }
