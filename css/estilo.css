@@ -35,6 +35,9 @@ a {
 p {
 	font-size: 15px;
 }
+body {
+	background-color: #000;
+}
 
 .header {
     background-color: #1981FF;
@@ -159,7 +162,7 @@ p {
 }
 
 .nosotros__contenido {
-	
+	background-color: #000;
 	height: auto;
 	width: 100%;
 	display: flex;
@@ -299,7 +302,7 @@ p {
 .planes {
 	grid-column: 2/3;
 	grid-row: 3/6;
-	width: 90%;
+	width: 100%;
 	max-width: 1200px;
 	margin: auto;
 	padding-top: 20px;
@@ -307,11 +310,13 @@ p {
 	justify-content: space-evenly;
 	align-items: center;
 	flex-wrap: wrap;
+	background-color: #000;
 }
 
 .planes__tabla {
 	color: #fff;
 	background-color: #000;
+	margin: 10px;
 }
 
 .planes__tabla h2 {
@@ -359,6 +364,9 @@ p {
 	display:flex;
 	flex-flow: column;
 	justify-content: center;
+}
+.formulario{
+	background-color: #000;
 }
 
 
@@ -607,7 +615,7 @@ p {
 	padding: 0;
 	margin: auto;
 	height: auto;
-	width: 250px;
+	width: 80%;
 	border-radius: 5px;
 }
 
