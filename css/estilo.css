@@ -301,7 +301,8 @@ p {
 	grid-row: 3/6;
 	width: 90%;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: auto;
+	padding-top: 20px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -310,24 +311,16 @@ p {
 
 .planes__tabla {
 	color: #fff;
-	text-align: center;
-	margin: 20px 0 0 0;
-	width: 30%;
-	min-width: 250px;
-	height: 350px;
-	border: 1px solid #fff;
-	border-radius: 5px;
-	box-shadow: 0 0 4px 0 #fff;
-	padding: 10px;
-	flex-grow: 1;
+	background-color: #000;
 }
 
 .planes__tabla h2 {
-	background-color: #1981FF;
+	font-size: x-large;
 	margin-bottom: 30px;
 }
 
 .planes__tabla h3 {
+	font-size: x-large;
 	margin-bottom: 30px;
 }
 
@@ -343,9 +336,6 @@ p {
 }
 
 .planes__tabla a {
-	background-color: #1981FF;
-	padding: 5px 20px;
-	border-radius: 20px;
 	font-weight: 600;
 }
 
