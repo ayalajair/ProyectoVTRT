@@ -96,6 +96,9 @@ p {
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
 }
+.principal {
+	background-color: #000;
+}
 
 .carta {
 	background-color: #1981FF;
@@ -139,7 +142,6 @@ p {
 /*-------------------------- Css página Nosotros------------------------------------------------ */
 
 .banner__nosotros {
-	grid-column: 1/4;
 	padding-top: 0;
 	width: 100%;
 	height: auto;
@@ -152,14 +154,8 @@ p {
 	flex-flow: column;
 	justify-content: center;
 }
-
 .nosotros {
-	grid-column: 2/3;
-	grid-row: 3/5;
-}
-.ubicacion {
-	grid-column: 2/3;
-	grid-row: 5/6;
+	padding: 0;
 }
 
 .nosotros__contenido {
@@ -182,6 +178,7 @@ p {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
+
 }
 
 .nosotros__media img {
@@ -238,8 +235,7 @@ p {
 }
 
 .actividades {
-	grid-column: 2/3;
-	grid-row: 3/6;
+	padding: 0;
 }
 .galeria {
 	width: 100%;
@@ -270,7 +266,7 @@ p {
 	max-width: 1000px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	gap: 5px;
+	gap: 10px;
 }
 
 .galeria__fotos img {
