@@ -361,26 +361,23 @@ p {
 	justify-content: center;
 }
 
-.formulario {
-	grid-column: 2/3;
-	grid-row: 3/6;
-	width: 100%;
-	height: auto;
-}
 
 .formulario__contacto {
 	background-color: #0C3970;
-	padding: 20px 10px;
+	padding: 0;
 	margin: 30px auto;
 	height: auto;
-	width: 400px;
+	max-width: 700px;
 	border-radius: 5px;
+	display: flex;
+	justify-content: center;
 }
 .formulario__contacto fieldset {
 	width: 100%;
-	margin: 15px 0;
+	margin: 0;
 	border: none;
 	color: #fff;
+	padding: 0;
 }
 
 .formulario__contacto legend {
@@ -391,12 +388,11 @@ p {
 	background-color: #1981FF;
 	width: 100%;
 	height: 30px;
-	margin: 20px 0;
+	margin: 0;
 }
 
 .contacto__campo {
 	font-family: 'Roboto', sans-serif;
-	margin: auto;
 	padding: 5px;
 }
 .contacto__campo input{
@@ -406,11 +402,7 @@ p {
 	padding: 3px;
 }
 
-.comentario {
-	width: 300px;
-}
-
-.contacto__submit input {
+.contacto__submit {
 	color: #fff;
 	font-family: 'Oswald', sans-serif;
 	font-size: 17px;
@@ -418,12 +410,12 @@ p {
 	background-color: #1981FF;
 	border: none;
 	padding: 3px;
-	width: 100%;
-	margin: 5px auto;
+	margin: 5px 3rem;
 }
 
 .contacto__submit :hover {
-	background-color: #1981FF;
+	background-color: #1981FF
+
 }
 
 
@@ -496,14 +488,6 @@ p {
 		background-image: url(../img/imagen_nosotros-mobile.jpg) ;
 		height: 700px;
 	}
-	.nosotros {
-		grid-column: 1/4;
-		grid-row: 3/5;
-	}
-	.ubicacion {
-		grid-column: 1/4;
-		grid-row: 5/6;
-	}
 	.nosotros__contenido {
 		flex-direction: column;
 	}
@@ -559,7 +543,7 @@ p {
 	
 	.formulario__contacto {
 		background-color: #0C3970;
-		padding: 20px 10px;
+		padding: 0;
 		margin: 30px auto;
 		height: auto;
 		width: 400px;
@@ -567,10 +551,10 @@ p {
 	}
 	
 	.formulario__contacto legend {
-		font-size: 14px;
+		font-size: 16px;
 	}	
 	.contacto__submit input {
-		font-size: 14px;
+		font-size: 16px;
 	}
 }
 /* Media query para celulares */
@@ -620,8 +604,8 @@ p {
 
 .formulario__contacto {
 	background-color: #0C3970;
-	padding: 20px 10px;
-	margin: 30px auto;
+	padding: 0;
+	margin: auto;
 	height: auto;
 	width: 250px;
 	border-radius: 5px;
@@ -629,6 +613,7 @@ p {
 
 .formulario__contacto legend {
 	font-size: 16px;
+	margin: 0;
 }	
 .contacto__campo {
 	font-size: 16px;

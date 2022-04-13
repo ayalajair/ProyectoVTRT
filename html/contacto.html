@@ -45,82 +45,89 @@
             <a class="btn btn-primary btn-sm" href="./contacto.html" role="button">Escribinos para saber más de vos</a>
         </div>
     </section>
-    <main class="formulario" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1500">
-            <form method="get" enctype="text/plain" class="formulario__contacto row g-3 needs-validation" novalidate>
+    <main class="formulario" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
+            <form method="get" enctype="text/plain" class="formulario__contacto row " >
                 <fieldset>
-                    <legend>Tus Datos</legend>
-                    <div class="contacto__campo mb-3">
-                        <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
-                    </div>
-                    <div class="contacto__campo mb-3">
-                        <label for="apellido" class="form-label">Apellido:</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Tu apellido" required>
-                    </div>
-                    <div class="contacto__campo mb-3">
-                        <label for="sexo">Sexo:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="sexo">
-                            <label class="form-check-label" for="sexo">Masculino</label>
+                    <legend class="rounded-top">Tus Datos</legend>
+                    <div class=" d-flex  justify-content-evenly align-items-stretcht .justify-content-sm-start flex-wrap">
+                        <div class="contacto__campo mb-3 col-md-4">
+                            <label for="mombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre1"  required>
+                            <div class="invalid-feedback">
+                                Por favor ingresá tu nombre.
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="sexo">
-                            <label class="form-check-label" for="sexo">Femenino</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="sexo">
-                            <label class="form-check-label" for="sexo">Prefiero no decirlo</label>
+                        <div class="contacto__campo mb-3 col-md-4 ">
+                            <label for="apellido" class="form-label">Apellido:</label>
+                            <input type="text" class="form-control" id="apellido" placeholder="Tu apellido" required>
                         </div>
                     </div>
-                    <div class=" contacto campo mb-3">
-                        <label for="mail" class="form-label">Email: </label>
-                        <input type="email" class="form-control" id="mail" placeholder="nombre@ejemplo.com">
+                    <div class=" d-flex  justify-content-evenly align-items-stretcht flex-wrap"> 
+                        <div class="contacto__campo mb-3 col-md-4 ">
+                            <label for="sexo">Sexo:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sexo">
+                                <label class="form-check-label" for="sexo">Masculino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sexo">
+                                <label class="form-check-label" for="sexo">Femenino</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="sexo">
+                                <label class="form-check-label" for="sexo">Prefiero no decirlo</label>
+                            </div>
+                        </div>
+                        <div class=" contacto__campo mb-3 col-md-4">
+                            <label for="mail" class="form-label">Email: </label>
+                            <input type="email" class="form-control" id="mail" placeholder="nombre@ejemplo.com">
+                        </div>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Queremos saber de vos</legend>
-                    <div class="contacto__campo mb-3">
-                        <label for="experiencia">Corrías anteriormente?:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="experiencia">
-                            <label class="form-check-label" for="experiencia">Si</label>
+                    <div class=" d-flex  justify-content-evenly align-items-stretcht flex-wrap">
+                        <div class="contacto__campo mb-3 col-md-4">
+                            <label for="experiencia">Corrías anteriormente?:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="experiencia">
+                                <label class="form-check-label" for="experiencia">Si</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="experiencia">
+                                <label class="form-check-label" for="experiencia">No</label>
+                            </div>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="experiencia">
-                            <label class="form-check-label" for="experiencia">No</label>
+                        <div class="contacto__campo mb-3 col-md-4">
+                            <label for="preferencia" class="eleccion">Que carreras te gustan?:</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="1" id="preferencia">
+                                <label class="form-check-label" for="flexCheckDefault">De Calle</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="2" id="preferencia">
+                                <label class="form-check-label" for="flexCheckDefault">De Montaña</label>
+                            </div>
                         </div>
                     </div>
-                    <div class="contacto__campo mb-3">
-                        <label for="preferencia" class="eleccion">Que tipos de carreras te gustan?:</label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="1" id="preferencia">
-                            <label class="form-check-label" for="flexCheckDefault">De Calle</label>
+                        <div class="mb-3 contacto__campo px-3">
+                            <label for="pago" class="form-label">Que plan te interesa?: </label>
+                            <select class="form-select" aria-label="Default select example" id="pago">
+                                <option selected>Seleccioná tu plan</option>
+                                <option value="1">Plan mensual</option>
+                                <option value="2">Plan trimestral</option>
+                                <option value="3">Plan semestral</option>
+                                <option value="4">Aún no me decido</option>
+                            </select>
                         </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="2" id="preferencia">
-                            <label class="form-check-label" for="flexCheckDefault">De Montaña</label>
-                        </div>
-                    </div>
-                    <div class="mb-3 contacto__campo">
-                        <label for="pago" class="form-label">Que plan te interesa?: </label>
-                        <select class="form-select" aria-label="Default select example" id="pago">
-                            <option selected>Seleccioná tu plan</option>
-                            <option value="1">Plan mensual</option>
-                            <option value="2">Plan trimestral</option>
-                            <option value="3">Plan semestral</option>
-                            <option value="4">Aún no me decido</option>
-                        </select>
-                    </div>
                 </fieldset>
                 <Fieldset>
-                    <div class="mb-3 contacto__campo">
+                    <div class="mb-3 contacto__campo px-3">
                         <label for="comentario" class="form-label">Comentario: </label>
                         <textarea class="form-control" id="comentario" rows="3" placeholder="Escribí aquí tu comentario"></textarea>
                     </div>
                 </fieldset>
-                <div class="contacto__submit">
-                    <input type="submit" value="Enviar">
-                </div>
+                <button class="btn btn-primary contacto__submit" type="submit">ENVIAR</button>
             </form>
     </main>
     <footer class="d-flex flex-wrap justify-content-around align-items-center my-4 footer">
