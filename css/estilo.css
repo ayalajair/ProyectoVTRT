@@ -21,6 +21,7 @@ h2 {
 h3 {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
+	font-size: 20px;
 }
 
 a {
@@ -34,13 +35,6 @@ a {
 p {
 	font-size: 15px;
 }
-
-/* .layout {
-	display: grid;
-	grid-template-columns: 45px auto 45px;
-	grid-template-rows: auto 600px auto auto auto 250px;
-} */
-
 
 .header {
     background-color: #1981FF;
@@ -103,67 +97,32 @@ p {
 	font-family: 'Oswald', sans-serif;
 }
 
-.banner__subtitulo {
-	background-color: #0C3970;
-	width: 250px;
-	border: 1px solid #000;
-	border-radius: 5px;
-	text-align: center;
-	margin: 50px auto;
-	padding: 5px 10px;
-	color: #fff;
-	font-size: 20px;
-	text-transform: uppercase;
-	font-family: 'Oswald', sans-serif;
-}
-
-
-.seccion {
-	grid-column: 2/3;
-	grid-row: 3/6;
-	margin-top: 40px;
-	margin-bottom: 40px;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-}
-
-.seccion__contenedor {
-	width: 300px;
-	height: 300px;
-	margin: 20px;
+.carta {
 	background-color: #1981FF;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
+	padding: 0;	
 	border-radius: 20px;
-	box-shadow: 0 0 4px 0 #fff;
-	
-}
-
-.seccion__contenedor:hover {
-	transition: 0.2 all;
-	transform: scale(1.05);
 }
 
 .contenedor__imagen img {
 	background-color: #fff;
 	margin: 20px;
 	padding: 10px;
-	border-radius: 20px;
+	border-radius: 10px;
 	width: 125px;
 	height: 100px;
 }
 
 .contenedor__texto {
 	height: auto;
+	width: auto;
+	padding: 0;
 }
 
 .contenedor__texto h3 {
 	color: #fff;
 	background-color: #000;
 	text-align: center;
+	margin: 0;
 	padding: 5px;
 }
 
@@ -172,8 +131,7 @@ p {
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
-	padding: 10px;
-	margin: 0;
+	padding: 5px;
 	border-radius:0 0 20px 20px;
 	
 }
@@ -486,7 +444,7 @@ p {
 /* -------------------Css footer------------------------------------------------------ */
 .footer{
 	background-color: #1981FF;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 .contenedor_eslogan{
 	padding: 0;
@@ -543,11 +501,7 @@ p {
 		background-image: url(../img/imagen_portada-mobile.jpg);
 		height: 700px;
 	}
-	.seccion__contenedor {
-		width: 300px;
-		height: 275px;
-		margin: 10px;		
-	}
+
 /*----------------------------- Nosotros para tablets--------------------------------------------------- */
 	.banner__nosotros{
 		background-image: url(../img/imagen_nosotros-mobile.jpg) ;
@@ -704,9 +658,7 @@ p {
 }
 /* -----------------footer para celulares---------------- */
 
-.footer__contacto {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+.footer_link {
+	font-size: x-small;
 }
 }
