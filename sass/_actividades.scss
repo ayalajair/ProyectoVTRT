@@ -1,0 +1,53 @@
+.banner__actividades {
+	grid-column: 1/4;
+	padding-top: 0;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/imagen__actividades.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.actividades {
+	padding: 0;
+    .galeria {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .galeria__texto {
+            color: $colorLetrasClaro;
+            text-align: center;
+            overflow: hidden;
+            h2 {
+                background-color: $colorTerciario;
+                padding: 10px;   
+            }
+            p  {
+                padding: 10px;
+                font-family: $fuenteSecundaria;
+                text-transform: uppercase;
+            }
+        }        
+        .galeria__fotos {
+            margin: 5px auto;
+            width: 100%;
+            max-width: 1000px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            img {
+                width: 100%;
+                filter: blur(1px) brightness(80%);
+                &:hover {
+                    filter: none;
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+}

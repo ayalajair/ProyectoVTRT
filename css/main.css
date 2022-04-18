@@ -315,6 +315,81 @@ html body p {
   text-align: justify;
 }
 
+.banner__actividades {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  padding-top: 0;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/imagen__actividades.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.actividades {
+  padding: 0;
+}
+
+.actividades .galeria {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.actividades .galeria .galeria__texto {
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.actividades .galeria .galeria__texto h2 {
+  background-color: #0C3970;
+  padding: 10px;
+}
+
+.actividades .galeria .galeria__texto p {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+}
+
+.actividades .galeria .galeria__fotos {
+  margin: 5px auto;
+  width: 100%;
+  max-width: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.actividades .galeria .galeria__fotos img {
+  width: 100%;
+  -webkit-filter: blur(1px) brightness(80%);
+          filter: blur(1px) brightness(80%);
+}
+
+.actividades .galeria .galeria__fotos img:hover {
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
 .footer {
   background-color: #1981FF;
   margin-top: 10px;
