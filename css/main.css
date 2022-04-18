@@ -1,51 +1,11 @@
 @charset "UTF-8";
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 html {
@@ -388,6 +348,185 @@ html body p {
           filter: none;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+.banner__planes {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  padding-top: 0;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/imagen_planes.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.planes {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #000;
+}
+
+.planes .planes__tabla {
+  color: #fff;
+  background-color: #000;
+  margin: 10px;
+}
+
+.planes .planes__tabla h2 {
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
+.planes .planes__tabla h3 {
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
+.planes .planes__tabla ul {
+  margin-bottom: 40px;
+}
+
+.planes .planes__tabla ul li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.planes .planes__tabla a {
+  font-weight: 600;
+}
+
+.planes .planes__tabla:hover {
+  background-color: #0C3970;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.2 all;
+  transition: 0.2 all;
+}
+
+.banner__contacto {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  padding-top: 0;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/imagen_contacto.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario {
+  background-color: #000;
+}
+
+.formulario .formulario__contacto {
+  background-color: #0C3970;
+  padding: 0;
+  margin: 30px auto;
+  height: auto;
+  max-width: 700px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulario .formulario__contacto fieldset {
+  width: 100%;
+  margin: 0;
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+
+.formulario .formulario__contacto fieldset legend {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #1981FF;
+  width: 100%;
+  height: 30px;
+  margin: 0;
+}
+
+.formulario .formulario__contacto fieldset .contacto__campo {
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+}
+
+.formulario .formulario__contacto fieldset .contacto__campo input {
+  padding: 3px;
+}
+
+.formulario .formulario__contacto fieldset .contacto__campo label {
+  padding: 3px;
+}
+
+.formulario .formulario__contacto .contacto__submit {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  background-color: #1981FF;
+  border: none;
+  padding: 3px;
+  margin: 5px 3rem;
+}
+
+.formulario .formulario__contacto .contacto__submit :hover {
+  background-color: #1981FF;
+  border-color: #000;
 }
 
 .footer {

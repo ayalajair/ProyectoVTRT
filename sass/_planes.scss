@@ -1,0 +1,59 @@
+.banner__planes {
+	grid-column: 1/4;
+	padding-top: 0;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/imagen_planes.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+}
+
+.planes {
+	grid-column: 2/3;
+	grid-row: 3/6;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding-top: 20px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: $colorSecundario;
+    
+    .planes__tabla {
+        color: $colorLetrasClaro;
+        background-color: $colorSecundario;
+        margin: 10px;
+        h2 {
+            font-size: x-large;
+            margin-bottom: 30px;
+        }
+        h3 {
+            font-size: x-large;
+            margin-bottom: 30px;
+        }
+        ul {
+            margin-bottom: 40px;
+            li {	
+                font-family: $fuenteSecundaria;
+                font-weight: 600;
+                list-style: none;
+                margin-bottom: 10px;
+            }
+        }
+        a {
+            font-weight: 600;
+        }
+        &:hover {
+            background-color: $colorTerciario;
+            transform: scale(1.05);
+            transition: 0.2 all; 
+        }
+    }
+}
