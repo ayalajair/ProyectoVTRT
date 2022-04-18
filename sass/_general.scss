@@ -1,0 +1,41 @@
+
+html {
+	width: 100%;
+	height: 100vh;
+    background-color: $colorSecundario;
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: $colorSecundario;
+        h1 {
+            font-family: $fuentePrincipal;
+            font-size: 25px;
+            color: $colorLetrasClaro;
+        }
+        h2 {
+            font-family: $fuentePrincipal;
+            text-transform: uppercase;
+            font-size: 23px;
+            color: $colorLetrasClaro;
+        }
+        h3 {
+            font-family: $fuentePrincipal;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: $colorLetrasClaro;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+            font-family: $fuentePrincipal;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+}
+
+
+

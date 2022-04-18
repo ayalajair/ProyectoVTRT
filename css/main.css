@@ -1,0 +1,459 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+html body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+html body h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  color: #fff;
+}
+
+html body h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 23px;
+  color: #fff;
+}
+
+html body h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+}
+
+html body a {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+html body p {
+  font-size: 15px;
+}
+
+.header {
+  background-color: #1981FF;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0;
+}
+
+.header .header__logo {
+  margin: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header__logo img {
+  width: 135px;
+  height: 150px;
+}
+
+.header .header__menu {
+  background-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header__menu .menu_texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .header__menu a {
+  text-align: center;
+}
+
+.banner__home {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  padding-top: 0;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/imagen_portada.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner__titulo {
+  background-color: #000000af;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+.principal {
+  background-color: #000;
+}
+
+.principal .carta {
+  background-color: #1981FF;
+  padding: 0;
+  border-radius: 20px;
+}
+
+.principal .carta .contenedor__imagen img {
+  background-color: #fff;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  width: 125px;
+  height: 100px;
+}
+
+.principal .carta .contenedor__texto {
+  height: auto;
+  width: auto;
+  padding: 0;
+}
+
+.principal .carta .contenedor__texto h3 {
+  background-color: #000;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+}
+
+.principal .carta .contenedor__texto p {
+  background-color: #0C3970;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  padding: 5px;
+  border-radius: 0 0 20px 20px;
+}
+
+.banner__nosotros {
+  padding-top: 0;
+  width: 100%;
+  height: auto;
+  background-image: url(../img/imagen_nosotros.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nosotros, .ubicacion {
+  padding: 0;
+}
+
+.nosotros .nosotros__contenido, .ubicacion .nosotros__contenido, .nosotros .ubicacion__contenido, .ubicacion .ubicacion__contenido {
+  background-color: #000;
+  height: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.nosotros .nosotros__contenido--azul, .ubicacion .nosotros__contenido--azul, .nosotros .ubicacion__contenido--azul, .ubicacion .ubicacion__contenido--azul {
+  height: auto;
+  width: 100%;
+  background-color: #0C3970;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.nosotros .nosotros__media, .ubicacion .nosotros__media, .nosotros .ubicacion__media, .ubicacion .ubicacion__media {
+  height: 350px;
+  margin: 15px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.nosotros .nosotros__media img, .ubicacion .nosotros__media img, .nosotros .ubicacion__media img, .ubicacion .ubicacion__media img {
+  height: 350px;
+  border-radius: 5px;
+}
+
+.nosotros .nosotros__media iframe, .ubicacion .nosotros__media iframe, .nosotros .ubicacion__media iframe, .ubicacion .ubicacion__media iframe {
+  border-radius: 5px;
+  height: 350px;
+  width: 400px;
+}
+
+.nosotros .nosotros__texto, .ubicacion .nosotros__texto, .nosotros .ubicacion__texto, .ubicacion .ubicacion__texto {
+  color: #fff;
+  width: 30%;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px 20px 10px;
+}
+
+.nosotros .nosotros__texto h2, .ubicacion .nosotros__texto h2, .nosotros .ubicacion__texto h2, .ubicacion .ubicacion__texto h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+.nosotros .nosotros__texto p, .ubicacion .nosotros__texto p, .nosotros .ubicacion__texto p, .ubicacion .ubicacion__texto p {
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+}
+
+.footer {
+  background-color: #1981FF;
+  margin-top: 10px;
+}
+
+.footer .contenedor_eslogan {
+  padding: 0;
+}
+
+.footer .contenedor_eslogan .eslogan {
+  background-color: #0C3970;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer .footer_link:hover {
+  color: #fff;
+}
+
+.footer .footer_bajo {
+  margin-bottom: 5px;
+}
+
+.footer .footer_bajo .copy {
+  color: #fff;
+  font-size: medium;
+}
+
+.footer .footer_bajo .loguito {
+  border-radius: 5px;
+}
+
+.footer .footer_bajo .logo_red {
+  margin-bottom: 15px;
+}
+
+/* media query para tablets */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  h3 {
+    font-size: 15px;
+  }
+  a {
+    font-size: 15px;
+  }
+  p {
+    font-size: 12px;
+  }
+  /* --------------------------------------header para tablets------------------------------------------- */
+  .header__logo img {
+    width: 115px;
+    height: 130px;
+  }
+  /* ------------------------------ Home para tablets---------------------------------------------------- */
+  .banner__home {
+    background-image: url(../img/imagen_portada-mobile.jpg);
+    height: 700px;
+  }
+  /*----------------------------- Nosotros para tablets--------------------------------------------------- */
+  .banner__nosotros {
+    background-image: url(../img/imagen_nosotros-mobile.jpg);
+    height: 700px;
+  }
+  .nosotros__contenido {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros__contenido--azul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .nosotros__media {
+    height: 300px;
+    display: block;
+  }
+  .nosotros__media img {
+    height: 300px;
+    margin: auto;
+  }
+  .nosotros__texto {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 10px 10px 10px;
+  }
+  .nosotros__media iframe {
+    height: 250px;
+    width: 300px;
+  }
+  /*-------------------------- Página Actividades para tablets----------------------------- */
+  .banner__actividades {
+    background-image: url(../img/imagen__actividades-mobile.jpg);
+    height: 700px;
+  }
+  .galeria__fotos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .galeria__fotos img {
+    -webkit-filter: none;
+            filter: none;
+  }
+  /* -----------------------------Página Planes para tablets-------------------------------- */
+  .banner__planes {
+    background-image: url(../img/imagen_planes-mobile.jpg);
+    height: 700px;
+  }
+  /* ----------------------------Pagina Contacto para tablets------------------------------- */
+  .banner__contacto {
+    background-image: url(../img/imagen_contacto-mobile.jpg);
+    height: 700px;
+  }
+  .formulario__contacto {
+    background-color: #0C3970;
+    padding: 0;
+    margin: 30px auto;
+    height: auto;
+    width: 400px;
+    border-radius: 5px;
+  }
+  .formulario__contacto legend {
+    font-size: 16px;
+  }
+  .contacto__submit input {
+    font-size: 16px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+.banner__home {
+	grid-column: 1/4;
+	grid-row: 2/3;
+	padding-top: 0;
+	width: 100%;
+	height: auto;
+	background-image: url(../img/imagen_portada.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 600px;
+	display:flex;
+	flex-flow: column;
+	justify-content: center;
+
+}
+
+.banner__titulo {
+	background-color: #000000af;
+	color: $colorLetrasClaro;
+	padding: 5px;	
+	text-align: center;
+	text-transform: uppercase;
+	font-family: $fuentePrincipal;
+}
+.principal {
+	background-color: $colorSecundario;
+    .carta {
+        background-color: $colorPrincipal;
+        padding: 0;	
+        border-radius: 20px;
+        .contenedor__imagen {
+            img {
+                background-color: $colorLetrasClaro;
+                margin: 20px;
+                padding: 10px;
+                border-radius: 10px;
+                width: 125px;
+                height: 100px;
+            }    
+        }
+        .contenedor__texto {
+            height: auto;
+            width: auto;
+            padding: 0;
+            h3 {
+                background-color: $colorSecundario;
+                text-align: center;
+                margin: 0;
+                padding: 5px;
+            }
+            p {
+                background-color: $colorTerciario;
+                color: $colorLetrasClaro;
+                font-family: $fuenteSecundaria;
+                text-align: center;
+                padding: 5px;
+                border-radius:0 0 20px 20px;
+                
+            }
+        }
+    }
+}
+

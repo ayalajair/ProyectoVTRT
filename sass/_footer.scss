@@ -1,0 +1,31 @@
+.footer{
+	background-color: $colorPrincipal;
+	margin-top: 10px;
+    .contenedor_eslogan{
+        padding: 0;        
+        .eslogan {
+            background-color: $colorTerciario;
+            color: $colorLetrasClaro;
+            font-family: $fuentePrincipal;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    .footer_link:hover {
+        color: $colorLetrasClaro;
+    }
+    .footer_bajo {
+        margin-bottom: 5px;
+        .copy{
+            color: $colorLetrasClaro;
+            font-size: medium;
+        }
+        .loguito{
+            border-radius: 5px;
+        }       
+        .logo_red {
+            margin-bottom: 15px;
+        }
+    }
+}

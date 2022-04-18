@@ -38,6 +38,7 @@ p {
 body {
 	background-color: #000;
 }
+/* header */
 
 .header {
     background-color: #1981FF;
@@ -94,8 +95,7 @@ body {
 .banner__titulo {
 	background-color: #000000af;
 	color: #fff;
-	padding: 5px;
-	
+	padding: 5px;	
 	text-align: center;
 	text-transform: uppercase;
 	font-family: 'Oswald', sans-serif;
