@@ -11,6 +11,9 @@ html {
             font-family: $fuentePrincipal;
             font-size: 25px;
             color: $colorLetrasClaro;
+            /* @media (max-width: 768px) {
+                font-size: 20px;
+            } */
         }
         h2 {
             font-family: $fuentePrincipal;

@@ -1,0 +1,209 @@
+/* media query para tablets */
+@media (max-width: 768px) {
+
+	html{ 
+		body{
+
+			
+			h1 {
+				font-size: 20px;
+			}	
+			h2 { 
+				font-size: 17px;
+			}
+			h3{
+				font-size: 15px;
+			}
+			a {
+				font-size: 15px;
+			}
+			p{
+				font-size: 12px;
+			}
+		}
+	}
+
+/* --------------------------------------header para tablets------------------------------------------- */	
+	.header{
+		.header__logo {
+			img {
+				width: 115px;
+				height: 130px;
+			} 
+		}
+	}
+/* ------------------------------ Home para tablets---------------------------------------------------- */
+	.banner__home {
+		background-image: url(../img/imagen_portada-mobile.jpg);
+		height: 700px;
+	}
+
+/*----------------------------- Nosotros para tablets--------------------------------------------------- */
+	.banner__nosotros{
+		background-image: url(../img/imagen_nosotros-mobile.jpg) ;
+		height: 700px;
+	}
+	.nosotros, .ubicacion {
+		& &__contenido {
+			flex-direction: column;
+		}
+		
+		& &__contenido--azul {
+			flex-direction: column;
+		}
+		
+		& &__media {
+			height: 300px;
+			display: block;
+			img {
+				height: 300px;
+				margin: auto;
+            }
+			iframe {
+				height: 250px;
+				width: 300px;
+			}
+		}	
+		& &__texto{
+		width: 80%;
+		display: block;
+		margin: 10px auto;
+		padding: 10px 10px 10px 10px;
+		}
+	}
+
+/*-------------------------- Página Actividades para tablets----------------------------- */
+	.banner__actividades {
+		background-image: url(../img/imagen__actividades-mobile.jpg);
+		height: 700px;
+	}
+	.actividades{
+		.galeria {
+			.galeria__fotos {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				img {
+					filter: none;
+				}
+			}
+		}
+	}
+/* -----------------------------Página Planes para tablets-------------------------------- */
+	.banner__planes {
+		background-image: url(../img/imagen_planes-mobile.jpg);
+		height: 700px;
+	}
+/* ----------------------------Pagina Contacto para tablets------------------------------- */
+	.banner__contacto {
+		background-image: url(../img/imagen_contacto-mobile.jpg);
+		height: 700px;
+	}
+	.formulario {
+		.formulario__contacto {
+			background-color: $colorTerciario;
+			padding: 0;
+			margin: 30px auto;
+			height: auto;
+			width: 400px;
+			border-radius: 5px;
+			fieldset {
+				legend {
+					font-size: 16px;
+				}
+			}
+			
+			.contacto__submit {
+				input {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+/* -----------------------------------mediaqueries para celulares */
+@media screen and (max-width: 480px){
+	html{
+		body {
+
+			h1 {
+				font-size: 17px;
+			}
+			h2 { 
+				font-size: 15px;
+			}
+			h3{
+				font-size: 14px;
+			}
+			a {
+				font-size: 14px;
+			}
+			p{
+				font-size: 12px;
+			}
+		}
+	}
+/* ----------------------------------------Header para celulares-------------------------------------------------- */
+	.header{
+		.header__logo img {
+			width: 105px;
+			height: 120px;
+		}
+	}
+
+
+/*-----------------------------------Nosotros para celulares ------------------------------ */
+	.nosotros__media img {
+		height: 250px;
+	}
+	
+	.nosotros__media {
+		height: 250px;
+	}
+
+	.nosotros__media iframe {
+		height: 250px;
+		width: 250px;
+	}
+/* -----------------------------Actividades para celulares---------------------------------- */	
+	.actividades {
+		.galeria {
+			.galeria__fotos {
+				display: grid;
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+/* -----------------------------Contacto para celulares--------------------- */
+
+.formulario__contacto {
+	background-color: #0C3970;
+	padding: 0;
+	margin: auto;
+	height: auto;
+	width: 80%;
+	border-radius: 5px;
+}
+
+.formulario__contacto legend {
+	font-size: 16px;
+	margin: 0;
+}	
+.contacto__campo {
+	font-size: 16px;
+}
+.contacto__submit input a {
+	font-size: 16px;
+}
+
+.comentario {
+	width: 230px;
+}
+/* -----------------footer para celulares---------------- */
+
+.footer_link {
+	font-size: x-small;
+}
+.copy {
+	font-size: x-small;
+}
+}

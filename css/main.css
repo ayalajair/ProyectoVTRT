@@ -2,10 +2,6 @@
 html, body {
   margin: 0;
   padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
 }
 
 html {
@@ -24,6 +20,9 @@ html body h1 {
   font-family: "Oswald", sans-serif;
   font-size: 25px;
   color: #fff;
+  /* @media (max-width: 768px) {
+                font-size: 20px;
+            } */
 }
 
 html body h2 {
@@ -79,18 +78,9 @@ html body p {
 
 .header .header__menu {
   background-color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .header .header__menu .menu_texto {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -569,24 +559,24 @@ html body p {
 }
 
 /* media query para tablets */
-@media screen and (max-width: 768px) {
-  h1 {
+@media (max-width: 768px) {
+  html body h1 {
     font-size: 20px;
   }
-  h2 {
+  html body h2 {
     font-size: 17px;
   }
-  h3 {
+  html body h3 {
     font-size: 15px;
   }
-  a {
+  html body a {
     font-size: 15px;
   }
-  p {
+  html body p {
     font-size: 12px;
   }
   /* --------------------------------------header para tablets------------------------------------------- */
-  .header__logo img {
+  .header .header__logo img {
     width: 115px;
     height: 130px;
   }
@@ -600,48 +590,48 @@ html body p {
     background-image: url(../img/imagen_nosotros-mobile.jpg);
     height: 700px;
   }
-  .nosotros__contenido {
+  .nosotros .nosotros__contenido, .ubicacion .nosotros__contenido, .nosotros .ubicacion__contenido, .ubicacion .ubicacion__contenido {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .nosotros__contenido--azul {
+  .nosotros .nosotros__contenido--azul, .ubicacion .nosotros__contenido--azul, .nosotros .ubicacion__contenido--azul, .ubicacion .ubicacion__contenido--azul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .nosotros__media {
+  .nosotros .nosotros__media, .ubicacion .nosotros__media, .nosotros .ubicacion__media, .ubicacion .ubicacion__media {
     height: 300px;
     display: block;
   }
-  .nosotros__media img {
+  .nosotros .nosotros__media img, .ubicacion .nosotros__media img, .nosotros .ubicacion__media img, .ubicacion .ubicacion__media img {
     height: 300px;
     margin: auto;
   }
-  .nosotros__texto {
+  .nosotros .nosotros__media iframe, .ubicacion .nosotros__media iframe, .nosotros .ubicacion__media iframe, .ubicacion .ubicacion__media iframe {
+    height: 250px;
+    width: 300px;
+  }
+  .nosotros .nosotros__texto, .ubicacion .nosotros__texto, .nosotros .ubicacion__texto, .ubicacion .ubicacion__texto {
     width: 80%;
     display: block;
     margin: 10px auto;
     padding: 10px 10px 10px 10px;
-  }
-  .nosotros__media iframe {
-    height: 250px;
-    width: 300px;
   }
   /*-------------------------- Página Actividades para tablets----------------------------- */
   .banner__actividades {
     background-image: url(../img/imagen__actividades-mobile.jpg);
     height: 700px;
   }
-  .galeria__fotos {
+  .actividades .galeria .galeria__fotos {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
-  .galeria__fotos img {
+  .actividades .galeria .galeria__fotos img {
     -webkit-filter: none;
             filter: none;
   }
@@ -655,7 +645,7 @@ html body p {
     background-image: url(../img/imagen_contacto-mobile.jpg);
     height: 700px;
   }
-  .formulario__contacto {
+  .formulario .formulario__contacto {
     background-color: #0C3970;
     padding: 0;
     margin: 30px auto;
@@ -663,11 +653,82 @@ html body p {
     width: 400px;
     border-radius: 5px;
   }
-  .formulario__contacto legend {
+  .formulario .formulario__contacto fieldset legend {
     font-size: 16px;
   }
-  .contacto__submit input {
+  .formulario .formulario__contacto .contacto__submit input {
     font-size: 16px;
+  }
+}
+
+/* -----------------------------------mediaqueries para celulares */
+@media screen and (max-width: 480px) {
+  html body h1 {
+    font-size: 17px;
+  }
+  html body h2 {
+    font-size: 15px;
+  }
+  html body h3 {
+    font-size: 14px;
+  }
+  html body a {
+    font-size: 14px;
+  }
+  html body p {
+    font-size: 12px;
+  }
+  /* ----------------------------------------Header para celulares-------------------------------------------------- */
+  .header .header__logo img {
+    width: 105px;
+    height: 120px;
+  }
+  /*-----------------------------------Nosotros para celulares ------------------------------ */
+  .nosotros__media img {
+    height: 250px;
+  }
+  .nosotros__media {
+    height: 250px;
+  }
+  .nosotros__media iframe {
+    height: 250px;
+    width: 250px;
+  }
+  /* -----------------------------Actividades para celulares---------------------------------- */
+  .actividades .galeria .galeria__fotos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  /* -----------------------------Contacto para celulares--------------------- */
+  .formulario__contacto {
+    background-color: #0C3970;
+    padding: 0;
+    margin: auto;
+    height: auto;
+    width: 80%;
+    border-radius: 5px;
+  }
+  .formulario__contacto legend {
+    font-size: 16px;
+    margin: 0;
+  }
+  .contacto__campo {
+    font-size: 16px;
+  }
+  .contacto__submit input a {
+    font-size: 16px;
+  }
+  .comentario {
+    width: 230px;
+  }
+  /* -----------------footer para celulares---------------- */
+  .footer_link {
+    font-size: x-small;
+  }
+  .copy {
+    font-size: x-small;
   }
 }
 /*# sourceMappingURL=main.css.map */
