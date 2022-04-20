@@ -659,6 +659,9 @@ html body p {
   .formulario .formulario__contacto .contacto__submit input {
     font-size: 16px;
   }
+  .footer .footer_link {
+    color: #fff;
+  }
 }
 
 /* -----------------------------------mediaqueries para celulares */

@@ -119,6 +119,11 @@
 			}
 		}
 	}
+	.footer {
+		.footer_link {
+			color: $colorLetrasClaro;
+		}
+	}
 }
 /* -----------------------------------mediaqueries para celulares */
 @media screen and (max-width: 480px){
