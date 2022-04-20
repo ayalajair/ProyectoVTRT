@@ -152,18 +152,19 @@
 
 
 /*-----------------------------------Nosotros para celulares ------------------------------ */
-	.nosotros__media img {
-		height: 250px;
-	}
-	
-	.nosotros__media {
-		height: 250px;
+	.nosotros, .ubicacion{
+		& &__media {
+			height: 250px;
+			img {
+				height: 250px;
+			}
+			iframe {
+				height: 250px;
+				width: 250px;
+			}
+		}
 	}
 
-	.nosotros__media iframe {
-		height: 250px;
-		width: 250px;
-	}
 /* -----------------------------Actividades para celulares---------------------------------- */	
 	.actividades {
 		.galeria {
@@ -174,36 +175,47 @@
 		}
 	}
 /* -----------------------------Contacto para celulares--------------------- */
+	.formulario{
+		.formulario__contacto {
+			background-color: #0C3970;
+			padding: 0;
+			margin: auto;
+			height: auto;
+			width: 80%;
+			border-radius: 5px;
+			fieldset {
+				legend {
+					font-size: 16px;
+					margin: 0;
+				}
+				.contacto__campo {
+					font-size: 16px;
+				}
+				.comentario {
+					width: 230px;
+				}
+			}
+			.contacto__submit {
+				input {
+					a {		
+					font-size: 16px;
+					}
+				}
+			}
+		}
+	}
 
-.formulario__contacto {
-	background-color: #0C3970;
-	padding: 0;
-	margin: auto;
-	height: auto;
-	width: 80%;
-	border-radius: 5px;
-}
 
-.formulario__contacto legend {
-	font-size: 16px;
-	margin: 0;
-}	
-.contacto__campo {
-	font-size: 16px;
-}
-.contacto__submit input a {
-	font-size: 16px;
-}
-
-.comentario {
-	width: 230px;
-}
 /* -----------------footer para celulares---------------- */
-
-.footer_link {
-	font-size: x-small;
-}
-.copy {
-	font-size: x-small;
-}
+	.footer {
+		.footer_link {
+			font-size: x-small;
+		}
+		
+		.footer_bajo{
+			.copy {
+			font-size: x-small;
+		}
+		}
+	}
 }

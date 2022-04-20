@@ -684,13 +684,13 @@ html body p {
     height: 120px;
   }
   /*-----------------------------------Nosotros para celulares ------------------------------ */
-  .nosotros__media img {
+  .nosotros .nosotros__media, .ubicacion .nosotros__media, .nosotros .ubicacion__media, .ubicacion .ubicacion__media {
     height: 250px;
   }
-  .nosotros__media {
+  .nosotros .nosotros__media img, .ubicacion .nosotros__media img, .nosotros .ubicacion__media img, .ubicacion .ubicacion__media img {
     height: 250px;
   }
-  .nosotros__media iframe {
+  .nosotros .nosotros__media iframe, .ubicacion .nosotros__media iframe, .nosotros .ubicacion__media iframe, .ubicacion .ubicacion__media iframe {
     height: 250px;
     width: 250px;
   }
@@ -702,7 +702,7 @@ html body p {
         grid-template-columns: 1fr;
   }
   /* -----------------------------Contacto para celulares--------------------- */
-  .formulario__contacto {
+  .formulario .formulario__contacto {
     background-color: #0C3970;
     padding: 0;
     margin: auto;
@@ -710,24 +710,24 @@ html body p {
     width: 80%;
     border-radius: 5px;
   }
-  .formulario__contacto legend {
+  .formulario .formulario__contacto fieldset legend {
     font-size: 16px;
     margin: 0;
   }
-  .contacto__campo {
+  .formulario .formulario__contacto fieldset .contacto__campo {
     font-size: 16px;
   }
-  .contacto__submit input a {
-    font-size: 16px;
-  }
-  .comentario {
+  .formulario .formulario__contacto fieldset .comentario {
     width: 230px;
   }
+  .formulario .formulario__contacto .contacto__submit input a {
+    font-size: 16px;
+  }
   /* -----------------footer para celulares---------------- */
-  .footer_link {
+  .footer .footer_link {
     font-size: x-small;
   }
-  .copy {
+  .footer .footer_bajo .copy {
     font-size: x-small;
   }
 }
