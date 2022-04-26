@@ -1,0 +1,6 @@
+@mixin fuentes ($size) {
+    font-family: $fuentePrincipal;
+    text-transform: uppercase;
+    font-size: $size;
+    color: $colorLetrasClaro;
+}

@@ -7,32 +7,19 @@ html {
         width: 100%;
         height: 100vh;
         background-color: $colorSecundario;
+
         h1 {
-            font-family: $fuentePrincipal;
-            font-size: 25px;
-            color: $colorLetrasClaro;
-            /* @media (max-width: 768px) {
-                font-size: 20px;
-            } */
+            @include fuentes (25px);
         }
         h2 {
-            font-family: $fuentePrincipal;
-            text-transform: uppercase;
-            font-size: 23px;
-            color: $colorLetrasClaro;
+            @include fuentes (23px);
         }
         h3 {
-            font-family: $fuentePrincipal;
-            text-transform: uppercase;
-            font-size: 20px;
-            color: $colorLetrasClaro;
+            @include fuentes (20px);
         }
         a {
             text-decoration: none;
-            color: #fff;
-            font-family: $fuentePrincipal;
-            font-size: 20px;
-            text-transform: uppercase;
+            @include fuentes (20px);
         }
         p {
             font-size: 15px;

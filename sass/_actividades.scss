@@ -1,16 +1,6 @@
 .banner__actividades {
-	grid-column: 1/4;
-	padding-top: 0;
-	width: 100%;
-	height: auto;
+    @extend .banner__home;
 	background-image: url(../img/imagen__actividades.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 600px;
-	display:flex;
-	flex-flow: column;
-	justify-content: center;
 }
 
 .actividades {

@@ -1,50 +1,34 @@
 .banner__nosotros {
-	padding-top: 0;
-	width: 100%;
-	height: auto;
+    @extend .banner__home;
 	background-image: url(../img/imagen_nosotros.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 600px;
-	display:flex;
-	flex-flow: column;
-	justify-content: center;
 }
 .nosotros,.ubicacion {
 	padding: 0;
-    & &__contenido {
-        background-color: $colorSecundario;
-        height: auto;
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-    }    
-    & &__contenido--azul {
-        height: auto;
-        width: 100%;
-        background-color: $colorTerciario;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;        
-    }    
+    /* --------------------------uso de map */
+    @each $fondo, $back in $fondos {
+        & &__contenido--#{$fondo} {
+            background-color: $back;
+            height: auto;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+    }
     & &__media {
         height: 350px;
         margin: 15px;
         display: inline-block;
         padding: 10px;
         img {
-            height: 350px;
+            height: map-get($alturas, altura1);
             border-radius: 5px;
         }
         iframe {
             border-radius: 5px;
-            height: 350px;
+            height: map-get($alturas, altura1);
             width: 400px;
         }
     }

@@ -53,14 +53,14 @@
 		}
 		
 		& &__media {
-			height: 300px;
+			height: map-get($alturas, altura2);
 			display: block;
 			img {
-				height: 300px;
+				height: map-get($alturas, altura2);
 				margin: auto;
             }
 			iframe {
-				height: 250px;
+				height: map-get($alturas, altura3);
 				width: 300px;
 			}
 		}	
@@ -161,10 +161,10 @@
 		& &__media {
 			height: 250px;
 			img {
-				height: 250px;
+				height: map-get($alturas, altura3);
 			}
 			iframe {
-				height: 250px;
+				height: map-get($alturas, altura3);
 				width: 250px;
 			}
 		}
