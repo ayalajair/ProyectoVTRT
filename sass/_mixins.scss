@@ -1,3 +1,4 @@
+ //Se realizó un mixin que les da propiedades a las diferentes textos , solo hay que mandarle el dato la altura de la fuente 
 @mixin fuentes ($size) {
     font-family: $fuentePrincipal;
     text-transform: uppercase;

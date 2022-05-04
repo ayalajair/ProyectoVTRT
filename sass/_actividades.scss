@@ -1,3 +1,4 @@
+// el banner se hace con un extend del banner de la pagina home y se le cambia la imagen de fondo */
 .banner__actividades {
     @extend .banner__home;
 	background-image: url(../img/imagen__actividades.jpg);

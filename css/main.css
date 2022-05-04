@@ -206,7 +206,7 @@ html body p {
 
 .nosotros .nosotros__media, .ubicacion .nosotros__media, .nosotros .ubicacion__media, .ubicacion .ubicacion__media {
   height: 350px;
-  margin: 15px;
+  margin: 15px 15px 30px 15px;
   display: inline-block;
   padding: 10px;
 }

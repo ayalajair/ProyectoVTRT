@@ -1,8 +1,10 @@
+//partial destinado al uso de maps
+//map utilizado en la pagina nosotros, donde se genera un cambio de fondos en la seccion principal
 $fondos: ( 
         negro: $colorSecundario,
         azul:  $colorTerciario,
 ); 
-
+//map utilizado para darle altura a las imagenes utilizadas en la página nosotros y en media queries
 $alturas: (
     altura1: 350px,
     altura2: 300px,
